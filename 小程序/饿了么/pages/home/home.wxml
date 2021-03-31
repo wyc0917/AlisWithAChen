@@ -1,0 +1,88 @@
+<view class="top">
+  <view class="search-nav">
+    <icon type="search"></icon><input type="text" placeholder="请输入你想要的内容" />
+  </view>
+</view>
+<view class="ul view">
+  <view class="li" wx:for="{{nav}}" wx:key="index">
+    <image src="{{item.img}}"></image>
+    <text>
+      {{item.title}}
+    </text>
+  </view>
+</view>
+<view class="banner view">
+  <view class="left">
+    <text>品质套餐</text>
+    <text>
+      搭配齐全吃的好
+    </text>
+    <text>立即抢购></text>
+  </view>
+  <view class="right">
+    <image
+      src="https://cube.elemecdn.com/e/ee/df43e7e53f6e1346c3fda0609f1d3png.png?x-oss-process=image/resize,w_282,h_188,m_fixed">
+    </image>
+  </view>
+</view>
+
+<view class="view ad-member">
+  <view>
+    <text> 超级会员 </text><text>· 每月领9元红包</text>
+  </view>
+  <view>
+    立即开通>
+  </view>
+</view>
+<view class="view text">
+  —— 推荐商家 ——
+</view>
+
+<view class="sort_lists view">
+  <view>
+    <text>综合排序</text>
+  </view>
+  <view>
+    <text>距离最近</text>
+  </view>
+  <view>
+    <text>销量最高</text>
+  </view>
+  <view>
+    <text>筛选 </text>
+  </view>
+</view>
+<view class="view">
+  <view class="lists">
+    <view class="lists-li">
+      <view>
+        <view>
+          <image
+            src="https://cube.elemecdn.com/e/1d/037b5c79f3c9f4fd3635f715206b4jpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"
+          ></image>
+        </view>
+        <view class="store">
+          <view class="h3"><text>手撕大骨头(幸福路店)</text> <text>...</text></view>
+          <view class="delivery">
+            <view><image class="start" src="../../星星.png"></image><text>4.6 月售900单</text></view>
+            <span>蜂鸟专送</span>
+          </view>
+          <view class="store_last">
+            <view class="ellipsis">￥20起送|远距离配送￥2.5|￥34/人</view>
+            <view class="ellipsis">3.22km|41分钟</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="below">
+        <text>烤鸭熟食</text>
+        <view class="line"></view>
+        <view class="minus">
+          <view class="ellipsis"><text class="jian">减</text> 满22元减12元，满55元减17元，满75元减26元</view>
+          <view><text>4个活动 </text></view>
+        </view>
+        <view><text class="pei">配</text> 配送费立减 4元</view>
+      </view>
+    </view>
+  </view>
+</view>

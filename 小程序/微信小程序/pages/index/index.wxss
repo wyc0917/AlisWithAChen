@@ -1,0 +1,23 @@
+/**index.wxss 这是当前页的样式文件，默认存在样式隔离，只在当前页起效 **/
+.info{
+  width: 650rpx;
+  margin: 0 auto;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

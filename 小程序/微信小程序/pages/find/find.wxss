@@ -1,0 +1,16 @@
+/* pages/find/find.wxss */
+.root{
+  display: flex;
+  flex-wrap: wrap;
+}
+.root .item{
+  width: 375rpx;
+  font-size: 26rpx;
+}
+.root image{
+  width: 375rpx; height: 200rpx;
+}
+.roomname{
+  text-overflow: ellipsis;
+   
+}

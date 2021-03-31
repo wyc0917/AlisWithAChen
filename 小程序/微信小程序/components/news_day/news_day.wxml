@@ -1,0 +1,11 @@
+<!--component/news_day.js.wxml-->
+<view class="root1">
+  <view wx:for="{{dayList}}" wx:key="index" class="item"  
+  bindtap="tapNews" 
+  data-title="{{item.roomName}}"
+  data-url="{{item.roomSrc}}"
+  >
+    <image class="image" src="{{item.roomSrc}}" mode="aspectFit"></image>
+    <view class="roomname">{{item.roomName}}</view>
+  </view>
+</view>

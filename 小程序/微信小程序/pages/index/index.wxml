@@ -1,0 +1,19 @@
+<!--index.wxml  这是小程序页面的标签模板结构，不能用h5原生标签，只能用小程序的组件标签-->
+<view class="info">
+  <view>小程序提供了以下四种弹框类型</view>
+  <button bindtap="alert1">消息提示框</button>
+  <button bindtap="alert2">模态对话框</button>
+  <button bindtap="alert3">正在加载框</button>
+  <button bindtap="alert4">操作菜单栏</button>
+  <form>
+    <label for="user">姓名：</label>
+    <input type="text" id="user" value="{{name}}" bindinput="changeName" />
+    <picker range="{{ageRange}}" bindchange="changeAge">年龄:{{ageRange[index]}}</picker>
+    <radio-group bindchange="changeSex">
+      <label>男：<radio value="男"></radio></label>
+      <label>女： <radio valu e="女" checked></radio></label>
+    </radio-group>
+  </form>
+
+  <button bindtap="goNext">跳转到下一页</button>
+</view>

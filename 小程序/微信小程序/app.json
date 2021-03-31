@@ -1,0 +1,59 @@
+{
+  "title": "这句是注释，这个文件是小程序的全局配置文件，pages设置小程序的页面，第一个路径优先展示，window设置全局样式",
+  "pages": [
+    "pages/news/news",
+    "pages/index/index",
+    "pages/newsdetail/newsdetail",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/find/find",
+    "pages/tags/tags"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阿狸的Achen",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f0f",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#eee",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./img/img/主页.png",
+        "selectedIconPath": "./img/img/主页1.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "知乎",
+        "iconPath": "./img/img/主页.png",
+        "selectedIconPath": "./img/img/主页1.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "./img/img/find.png",
+        "selectedIconPath": "./img/img/find1.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "./img/img/order.png",
+        "selectedIconPath": "./img/img/order1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "./img/img/user.png",
+        "selectedIconPath": "./img/img/user1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

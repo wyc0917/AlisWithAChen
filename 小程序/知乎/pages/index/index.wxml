@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="box">
+  <swiper class="swi" autoplay indicator-dots circular indicator-active-color="#eee">
+    <swiper-item wx:for="{{img}}" wx:key="index">
+      <text class="title">{{item.title}}</text>
+      <image src="{{item.image}}" ></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="news">
+    <view class="newslist" wx:for="{{list}}" wx:key="index">
+      <view>
+        <image src="{{item.images[0]}}"></image>
+      </view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <view class="befor">
+    <view  wx:for="{{beforList}}" wx:key="index"> 
+      <view class="h1">{{item.date}} </view>
+      <view class="newslist" wx:for="{{item[0]}}"  wx:for-item="newitem" wx:key="ele">
+        <view>
+          <image src="{{newitem.images}}"></image>
+        </view>
+        <text>{{newitem.title}} </text>
+      </view>
+    </view>
+  </view>
+</view>

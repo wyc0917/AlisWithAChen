@@ -1,0 +1,33 @@
+<!--pages/tags/tags.wxml-->
+<!-- 在wxml中不能用html原生标签，只能用小程序组件标签 -->
+<!-- 小程序页面没有根标签 -->
+<!-- 以下介绍一下常用的组件标签 -->
+<!-- view 相当于div标签是块元素 -->
+<view>view</view>
+<view>view</view> 
+<view>view</view>
+<!-- text常用的行标签 相当于div中的span -->
+<text>text</text>
+<!-- image相当于img -->
+
+
+<!-- icon -->
+<icon type="success"></icon>
+<!-- navigator 相当于a标签 -->
+<navigator url="/pages/index/index">点我跳转主页</navigator>
+
+<button type="warn"> 这是一个按钮</button>
+<scroll-view scroll-x="true">
+  111111111111111111111112222222222222222233333333333333333333
+</scroll-view>
+<swiper indicator-dots="true" indicator-color="rgb(0,0,0)" autoplay="{{}}" indicator-active-color="#aaa"  circular>
+  <swiper-item wx:for="{{students}}" wx:key='index' wx:for-index="i" wx:for-item="students">{{i+4}}:{{students}} </swiper-item>
+  
+</swiper>
+
+<progress percent="20" show-info duration>
+
+</progress>
+<!-- 有两种 -->
+
+<button bindtap="bthClick">事件绑定</button>

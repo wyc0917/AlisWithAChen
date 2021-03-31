@@ -1,0 +1,15 @@
+<!--pages/find/find.wxml-->
+<view class="root">
+  <button open-type="share">点击分享</button>
+  <!-- <view wx:for="{{list}}" wx:key="index" class="item">
+    <image src="{{item.roomSrc}}" mode="aspectFit"></image>
+    <view class="roomname">{{item.roomName}}</view>
+  </view> -->
+
+  <new_day 
+  dayList="{{list}}" 
+  bindmyclick="childClick"
+  >
+  </new_day>
+
+</view>
